@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
-	    Scanner input = new Scanner(System.in);
-        System.out.print("Enter a digit: ");
-        int n = input.nextInt();
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a digit: ");
+		int n = input.nextInt();
         if ((n<10) && (n>-1)) {
             switch (n) {
                 case 0:
