@@ -7,7 +7,7 @@ package lab_1;
 
 /**
  *
- * @author saltsovapg
+ * Сальцова Полина
  */
 public class Z1 {
     public static void main(String[] args){
