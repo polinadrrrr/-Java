@@ -4,37 +4,21 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter n: ");
-		int min, max, i_min = 0, i_max = 0, buf;
-		int n = input.nextInt();
-		int[] array = new int[n];
-		System.out.print("Enter array: ");
-		for (int i = 0; i < n; i++) {
-		    array[i] = input.nextInt();
+		System.out.print("Enter string #1: ");
+		String s1 = input.nextLine();
+		System.out.print("Enter string #2: ");
+		String s2 = input.nextLine();
+		System.out.print("Enter string #3: ");
+		String s3 = input.nextLine();
+		System.out.print("Enter string #4: ");
+		String s4 = input.nextLine();
+		System.out.print("Enter string #5: ");
+		String s5 = input.nextLine();
+		if (s4.equals(s5)) {
+			System.out.println(s1 + s2);
 		}
-		System.out.print("Array: ");
-		for (int i = 0; i < n; i++) {
-		    System.out.print(array[i] + " ");
+		else {
+			System.out.println(s1 + s3);
 		}
-		min = array[0];
-		max = array[0];
-		for (int i = 0; i < n; i++) {
-		    if (array[i] < min) {
-		        min = array[i];
-		        i_min = i;
-		    }
-		    if (array[i] > max) {
-		        max = array[i];
-		        i_max = i;
-		    }
-		}
-		buf = array[i_min];
-		array[i_min] = array[i_max];
-		array[i_max] = buf;
-		System.out.print("\nResult: ");
-		for (int i = 0; i < n; i++) {
-		    System.out.print(array[i] + " ");
-		}
-		
 	}
 }
