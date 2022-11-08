@@ -10,19 +10,19 @@ public class Main
 		int[] array = new int[n];
 		System.out.print("Enter array: ");
 		for (int i = 0; i < n; i++) {
-		    array[i] = input.nextInt();
+			array[i] = input.nextInt();
 		}
 		System.out.print("Array: ");
 		for (int i = 0; i < n; i++) {
-		    System.out.print(array[i] + " ");
+			System.out.print(array[i] + " ");
 		}
 		for (int i = 0; i < n; i++) {
-		    if (array[i] % 2 == 0) {
-		        sum_even += array[i];
-		    }
-		    else {
-		        sum_odd += array[i];
-		    }
+			if (array[i] % 2 == 0) {
+				sum_even += array[i];
+			}
+			else {
+				sum_odd += array[i];
+			}
 		}
 		System.out.println("\nSum of even numbers: " + sum_even);
 		System.out.println("Sum of odd numbers: " + sum_odd);
